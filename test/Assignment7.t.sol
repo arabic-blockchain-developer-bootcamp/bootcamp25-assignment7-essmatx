@@ -9,7 +9,7 @@ contract Assignment7Test is Test {
 
     function setUp() public {
         // pass your token name and symbol here
-        assignment = new Assignment7();
+        assignment = new Assignment7("esmat","esmt");
     }
 
     function testMintAndTransfer() public {
@@ -21,3 +21,4 @@ contract Assignment7Test is Test {
         assertEq(balance, 1000 * 10**18, "Balance should be 1000 tokens");
     }
 }
+
